@@ -1,0 +1,104 @@
+/* Importaciones */
+@import url('https://fonts.cdnfonts.com/css/literata-book');
+/* font-family: 'Literata Book', sans-serif;*/
+/* Variables */
+
+:root{
+    --tipografia: 'Literata Book', sans-serif;
+
+    --colorFondo: #006989;
+    --colorTitulo: #E88D67;
+    --colorContraste: #F3F7EC;
+    --colorLetra: #005C78;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--colorFondo);
+    overflow-x: hidden;
+    overflow-y: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+main{
+    width: 100%;
+    height: 100vh;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.formulario{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+}
+
+.formularioNombres{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--tipografia);
+}
+
+.formularioNombres h1{
+    color: var(--colorTitulo);
+    width: 100%;
+    text-align: center;
+    margin-bottom: 2%;
+}
+
+.formularioNombres input{
+    border: 1px solid var(--colorLetra);
+    width: 50%;
+    font-family: var(--tipografia);
+    height: 3%;
+    margin: 10px;
+    border-radius: 5px;
+    padding: 2%;
+    padding-left: 10px;
+    color: var(--colorLetra);
+}
+
+.formularioNombres h3{
+    text-align: center;
+    color: var(--colorContraste);
+    width: 90%;
+    padding-top: 2%;
+    padding-bottom: 1%;
+}
+
+.formularioNombres button{
+    width: 30%;
+    height: 5%;
+    background-color: white;
+    border: 1px solid var(--colorTitulo);
+    border-radius: 3px;
+    font-family: var(--tipografia);
+    color: var(--colorTitulo);
+}   
+
+.nombresResultado{
+    border: 2px solid var(--colorLetra);
+    width: 60%;
+    height: 20%;
+    margin-top: 2%;
+    background-color: var(--colorContraste);
+    border-radius: 5px;
+    font-family: var(--tipografia);
+    color: var(--colorLetra);
+    padding: 10px;
+}
