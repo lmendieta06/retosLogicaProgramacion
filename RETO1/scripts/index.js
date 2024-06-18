@@ -13,7 +13,7 @@ document.querySelector(".formularioNombres").addEventListener('submit', (e) =>{
     for(let i=0; i<nombresExtraidos.length;i++){
         // Extrae el valor que se encuentre en esa posicion del arreglo
         // El .trim() Elimina espacios en blanco
-        const nombre = nombresExtraidos[i].value.trim();
+        const nombre = nombresExtraidos[i].value.trim().toLowerCase();
         // Validar que no este en blanco
         if(nombre){
             nombres.add(nombre);
@@ -25,8 +25,10 @@ document.querySelector(".formularioNombres").addEventListener('submit', (e) =>{
     // Limpiar el contenido que este
     nombresFinales.innerHTML = "";
 
+    // Añade el elemento al HTML
     nombres.forEach(nombre =>{
-        // Añade el elemento al html
-        nombresFinales.innerHTML += `<p>${nombre}</p>`;
+        // Hacer que se vean con mayuscula inicial
+        const nombreFormateado = nombre.charAt(0).toUpperCase() + nombre.slice(1);
+        nombresFinales.innerHTML += `<p>${nombreFormateado}</p>`;
     })
 })
