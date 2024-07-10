@@ -9,6 +9,7 @@ document.querySelector(".formularioNombres").addEventListener('submit', (e) =>{
     // Definir el arreglo donde se guardaran
     // El Set asegura que no hayan duplicados
     const nombres = new Set();
+    
 
     for(let i=0; i<nombresExtraidos.length;i++){
         // Extrae el valor que se encuentre en esa posicion del arreglo
